@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from ical.views import ical_test
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ics/', ical_test),
 ]
